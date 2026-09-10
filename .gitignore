@@ -1,0 +1,9 @@
+# MATLAB & Simulink autosave and cache
+*.asv
+*.slxc
+*.autosave
+slprj/
+*.mex*
+*.mat
+*.log
+.DS_Store
