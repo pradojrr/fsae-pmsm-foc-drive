@@ -152,9 +152,9 @@ flowchart TD
 
 The inner current-control loop operates in the rotating **d-q reference frame**.
 
-The controller includes feedforward compensation for the main coupling terms.
+The controller includes feedforward compensation for the main cross-coupling and back-EMF terms.
 
-### d-axis
+## d-axis
 
 The d-axis voltage command includes the q-axis cross-coupling term:
 
@@ -166,7 +166,7 @@ v_{d,PI}
 p\omega_e L_q i_q
 $$
 
-### q-axis
+## q-axis
 
 The q-axis voltage command includes both cross-coupling and permanent-magnet back-EMF compensation:
 
@@ -183,11 +183,11 @@ $$
 
 where:
 
-* $p$ = number of pole pairs
-* $\omega_e$ = electrical angular velocity
-* $L_d$ = d-axis inductance
-* $L_q$ = q-axis inductance
-* $\psi_m$ = permanent-magnet flux linkage
+- $p$ = number of pole pairs
+- $\omega_e$ = electrical angular velocity
+- $L_d$ = d-axis inductance
+- $L_q$ = q-axis inductance
+- $\psi_m$ = permanent-magnet flux linkage
 
 This decoupling improves dynamic current tracking, particularly during high-speed operation and aggressive torque transients.
 
