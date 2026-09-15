@@ -1,0 +1,6 @@
+# MATLAB e Simulink
+*.asv
+*.slprj
+slprj/
+*.autosave
+*.m.bak
